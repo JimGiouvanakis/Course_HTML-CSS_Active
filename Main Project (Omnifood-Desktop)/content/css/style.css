@@ -456,7 +456,11 @@
 /**********************************/
 
 .section-cta {
-  padding: 9.6rem;
+  /* top / right / bottom / left */
+  padding: 9.6rem 12.8rem 0;
+
+  /* top / horizontal / left  */
+  padding: 4.8rem 0 12.8rem;
 }
 
 .cta {
@@ -536,7 +540,12 @@
 /**********************************/
 
 .footer {
-  padding: 9.6rem 0;
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 
 .logo-col {
@@ -572,14 +581,16 @@
   margin-bottom: 3.2rem;
 }
 
-.contracts {
+.contacts {
   font-style: normal;
   font-size: 1.6rem;
   line-height: 1.6;
 }
 
-/* .address {
-} */
+.address {
+  margin-bottom: 2.4rem;
+}
+
 .footer-nav {
   list-style: none;
   display: flex;
