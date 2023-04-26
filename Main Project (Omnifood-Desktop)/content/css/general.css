@@ -104,6 +104,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid--center-v {
   align-items: center;
 }
@@ -155,7 +159,7 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
 
- /* Only necessary for .btn */
+  /* Only necessary for .btn */
   border: none;
   cursor: pointer;
   font-family: inherit;
@@ -192,15 +196,15 @@ body {
 }
 
 .btn--form {
- background-color: #45260a;
- color: #fdf2e9;
-align-self: end;
-padding: 1.2rem;
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
 }
 
-.btn--form:hover{
-background-color: #FFF;
-color: #555;
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
@@ -240,10 +244,10 @@ color: #555;
 }
 
 *:focus {
-outline: none;
-/* outline:4px dotted #e67e22 */
-/* outline-offset: 8px ; */
-box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+  outline: none;
+  /* outline:4px dotted #e67e22 */
+  /* outline-offset: 8px ; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /* HELPER/SETTING CLASSES */
