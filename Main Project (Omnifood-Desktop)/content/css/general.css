@@ -65,6 +65,8 @@ html {
   /* Percentage of User's browser font-size setting */
   font-size: 62.5%;
   overflow-x: hidden;
+  /* The scrool behavior is not working in the safari so i did it in the js */
+  /* scroll-behavior: smooth; */
 }
 
 body {
