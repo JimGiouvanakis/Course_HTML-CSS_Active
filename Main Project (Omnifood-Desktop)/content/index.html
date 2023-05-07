@@ -6,6 +6,17 @@
     <!-- Always Inluce this line of code for making the site work in all scales -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- The Google Search description -->
+    <meta name="description" content="Omnifood is a AI-power food subscription that will make you eat
+    healthy again 365 days per year.Its tailored to your personal tastes and nutritional needs." />
+    
+    
+    <!-- The broswer tab icon -->
+    <link rel="icon" href="img/favicon.png" />
+
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+
+  <link rel="manifest" href="manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
@@ -28,7 +39,7 @@
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <script defer src="js/script.js"></script>
     
-    <title>Omnifood</title>
+    <title>Omnifood &mdash; Never cook again</title>
   </head>
   <body>
     <header class="header">
@@ -84,14 +95,21 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="img/hero.png"
+            <!-- This will make the Browser Deside whitch image is better so it can 
+              have the best perfomance run -->
+            <picture>
+              <source srcset="img/hero.webp" type="img/webp" />
+              <source srcset="img/hero.png" type="img/png" />
+              <img
+              src="img/hero-min.png"
               class="hero-img"
               alt="Woman enjoyin food,meals in storage 
           container and food bowls on a table"
             />
+            </picture>
+            
           </div>
-        </div>
+        </div> 
       </section>
 
       <section class="section-featured">
